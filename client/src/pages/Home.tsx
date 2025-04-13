@@ -121,11 +121,9 @@ const Home = () => {
               <p className="text-muted-foreground mb-8 max-w-xl mx-auto">
                 Join the exclusive community of LUXEON users and discover how technology can be both functional and exquisite.
               </p>
-              <Button size="lg" asChild>
-                <Link href="/contact">
-                  <a>Contact Us Today</a>
-                </Link>
-              </Button>
+              <Link href="/contact">
+                <Button size="lg">Contact Us Today</Button>
+              </Link>
             </div>
           </GlassCard>
         </Container>

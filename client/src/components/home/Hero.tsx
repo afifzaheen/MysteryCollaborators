@@ -39,16 +39,12 @@ const Hero = () => {
               Experience the perfect fusion of cutting-edge technology and exquisite craftsmanship for the discerning consumer.
             </p>
             <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
-              <Button size="xl" asChild>
-                <Link href="/showcase">
-                  <a>Explore Collection</a>
-                </Link>
-              </Button>
-              <Button size="xl" variant="outline" asChild>
-                <Link href="/about">
-                  <a>Our Story</a>
-                </Link>
-              </Button>
+              <Link href="/showcase">
+                <Button size="xl">Explore Collection</Button>
+              </Link>
+              <Link href="/about">
+                <Button size="xl" variant="outline">Our Story</Button>
+              </Link>
             </div>
           </motion.div>
           
@@ -62,20 +58,12 @@ const Hero = () => {
               {/* Circular highlight behind product */}
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 rounded-full bg-primary/20 blur-xl"></div>
               
-              {/* Product placeholder with SVG */}
-              <svg 
-                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-md h-auto text-primary" 
-                viewBox="0 0 400 400" 
-                fill="none" 
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <circle cx="200" cy="200" r="150" stroke="currentColor" strokeWidth="2" />
-                <rect x="125" y="125" width="150" height="150" rx="20" stroke="currentColor" strokeWidth="2" />
-                <path d="M160 200 L240 200" stroke="currentColor" strokeWidth="2" />
-                <path d="M200 160 L200 240" stroke="currentColor" strokeWidth="2" />
-                <circle cx="200" cy="200" r="50" stroke="currentColor" strokeWidth="2" />
-                <circle cx="200" cy="200" r="15" fill="currentColor" />
-              </svg>
+              {/* Premium headphones product image */}
+              <img 
+                src="/src/assets/images/products/headphones.svg" 
+                alt="LUXEON Premium Headphones"
+                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-md h-auto" 
+              />
             </div>
           </motion.div>
         </div>

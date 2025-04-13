@@ -108,11 +108,9 @@ const FeaturedProducts = () => {
         </motion.div>
 
         <div className="mt-12 text-center">
-          <Button variant="glass" size="lg" asChild>
-            <Link href="/showcase">
-              <a>View All Products</a>
-            </Link>
-          </Button>
+          <Link href="/showcase">
+            <Button variant="glass" size="lg">View All Products</Button>
+          </Link>
         </div>
       </Container>
     </section>

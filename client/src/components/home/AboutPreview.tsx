@@ -32,11 +32,9 @@ const AboutPreview = () => {
               Our commitment to excellence extends beyond our products to every interaction 
               with our discerning clientele.
             </p>
-            <Button asChild>
-              <Link href="/about">
-                <a>Discover Our Story</a>
-              </Link>
-            </Button>
+            <Link href="/about">
+              <Button>Discover Our Story</Button>
+            </Link>
           </motion.div>
           
           <motion.div
