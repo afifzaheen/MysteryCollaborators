@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor">
+  <defs>
+    <linearGradient id="gold-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#D4AF37;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#F5D165;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D4AF37;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <g>
+    <!-- Headphone arc -->
+    <path d="M256 64C150.13 64 64 150.13 64 256v96c0 8.84 7.16 16 16 16h16c8.84 0 16-7.16 16-16v-96c0-79.53 64.47-144 144-144s144 64.47 144 144v96c0 8.84 7.16 16 16 16h16c8.84 0 16-7.16 16-16v-96c0-105.87-86.13-192-192-192z" fill="url(#gold-gradient)" />
+    
+    <!-- Left ear cup -->
+    <path d="M110 286.69C78.03 288.98 52 315.52 52 347.79V376c0 30.93 25.07 56 56 56h40c4.42 0 8-3.58 8-8v-152c0-4.42-3.58-8-8-8h-8c-10.81 0-21.02 2.37-30 6.69zM76 376v-28.21c0-20.31 16.17-36.98 36.14-37.79 1.93 19.64 17.81 35.17 37.86 37.26V408H108c-17.64 0-32-14.36-32-32z" fill="url(#gold-gradient)" />
+    
+    <!-- Right ear cup -->
+    <path d="M402 286.69c31.97 2.29 58 28.83 58 61.1V376c0 30.93-25.07 56-56 56h-40c-4.42 0-8-3.58-8-8v-152c0-4.42 3.58-8 8-8h8c10.81 0 21.02 2.37 30 6.69zM436 376v-28.21c0-20.31-16.17-36.98-36.14-37.79-1.93 19.64-17.81 35.17-37.86 37.26V408h40c17.64 0 32-14.36 32-32z" fill="url(#gold-gradient)" />
+    
+    <!-- Sound waves decoration  -->
+    <circle cx="140" cy="376" r="8" fill="url(#gold-gradient)" />
+    <circle cx="372" cy="376" r="8" fill="url(#gold-gradient)" />
+    
+    <!-- Plush details -->
+    <path d="M104 358a16 16 0 0 1 16-16h16a16 16 0 0 1 0 32h-16a16 16 0 0 1-16-16z" fill="url(#gold-gradient)" opacity="0.5" />
+    <path d="M376 358a16 16 0 0 1 16-16h16a16 16 0 0 1 0 32h-16a16 16 0 0 1-16-16z" fill="url(#gold-gradient)" opacity="0.5" />
+  </g>
+</svg>

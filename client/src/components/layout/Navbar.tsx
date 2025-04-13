@@ -40,16 +40,16 @@ const Navbar = () => {
     <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'py-3 glass' : 'py-6 bg-transparent'}`}>
       <div className="container mx-auto px-4 md:px-6 flex justify-between items-center">
         <Link href="/">
-          <a className="text-primary font-display text-2xl font-bold tracking-wider">LUXEON</a>
+          <span className="text-primary font-display text-2xl font-bold tracking-wider cursor-pointer">LUXEON</span>
         </Link>
 
         {/* Desktop navigation */}
         <nav className="hidden md:flex space-x-8">
           {navLinks.map((link) => (
             <Link key={link.href} href={link.href}>
-              <a className={`transition-colors duration-300 hover:text-primary ${location === link.href ? 'text-primary' : 'text-foreground'}`}>
+              <span className={`transition-colors duration-300 hover:text-primary cursor-pointer ${location === link.href ? 'text-primary' : 'text-foreground'}`}>
                 {link.label}
-              </a>
+              </span>
             </Link>
           ))}
           <Button variant="glass" size="sm">
@@ -81,9 +81,9 @@ const Navbar = () => {
               <div className="flex flex-col space-y-4">
                 {navLinks.map((link) => (
                   <Link key={link.href} href={link.href}>
-                    <a className={`text-lg py-2 ${location === link.href ? 'text-primary' : 'text-foreground'}`}>
+                    <span className={`text-lg py-2 block cursor-pointer ${location === link.href ? 'text-primary' : 'text-foreground'}`}>
                       {link.label}
-                    </a>
+                    </span>
                   </Link>
                 ))}
                 <Button variant="outline" className="mt-2">

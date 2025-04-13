@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor">
+  <defs>
+    <linearGradient id="gold-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#D4AF37;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#F5D165;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D4AF37;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="glow-gradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" style="stop-color:#F5D165;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#D4AF37;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+  <g>
+    <!-- Base -->
+    <ellipse cx="256" cy="400" rx="128" ry="32" fill="url(#gold-gradient)" />
+    
+    <!-- Main body cylinder -->
+    <path d="M128 240v160c0 0 0 32 128 32s128-32 128-32V240c0 0 0-32-128-32S128 240 128 240z" fill="url(#gold-gradient)" opacity="0.9" />
+    
+    <!-- Top surface -->
+    <ellipse cx="256" cy="240" rx="128" ry="32" fill="url(#gold-gradient)" />
+    
+    <!-- Control panel -->
+    <ellipse cx="256" cy="240" rx="80" ry="20" fill="#222" />
+    
+    <!-- Light ring -->
+    <ellipse cx="256" cy="240" rx="64" ry="16" stroke="url(#gold-gradient)" stroke-width="2" fill="none" />
+    
+    <!-- Central light/speaker -->
+    <ellipse cx="256" cy="240" rx="32" ry="8" fill="url(#gold-gradient)" opacity="0.3" />
+    
+    <!-- Light glow effect -->
+    <ellipse cx="256" cy="240" rx="48" ry="12" fill="url(#glow-gradient)" />
+    
+    <!-- Detail lines -->
+    <path d="M140 280c0 0 23-12 116-12s116 12 116 12" stroke="url(#gold-gradient)" stroke-width="2" fill="none" />
+    <path d="M140 320c0 0 35-16 116-16s116 16 116 16" stroke="url(#gold-gradient)" stroke-width="2" fill="none" />
+    <path d="M140 360c0 0 48-20 116-20s116 20 116 20" stroke="url(#gold-gradient)" stroke-width="2" fill="none" />
+    
+    <!-- Button details -->
+    <circle cx="200" cy="240" r="4" fill="url(#gold-gradient)" />
+    <circle cx="312" cy="240" r="4" fill="url(#gold-gradient)" />
+  </g>
+</svg>
