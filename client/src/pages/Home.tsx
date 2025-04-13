@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import Hero from '@/components/home/Hero';
 import FeaturedProducts from '@/components/home/FeaturedProducts';
 import VideoShowcase from '@/components/home/VideoShowcase';
 import AboutPreview from '@/components/home/AboutPreview';
@@ -17,13 +16,12 @@ const Home = () => {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <Hero />
-      <FeaturedProducts />
       <VideoShowcase 
         videoSrc={videoConfig.showcaseVideo.src}
         title={videoConfig.showcaseVideo.title}
         description={videoConfig.showcaseVideo.description}
       />
+      <FeaturedProducts />
       <AboutPreview />
       
       {/* Testimonials Section */}
