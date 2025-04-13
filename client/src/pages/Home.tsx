@@ -7,6 +7,7 @@ import { Container } from '@/components/ui/container';
 import { GlassCard } from '@/components/ui/glass-card';
 import { Button } from '@/components/ui/button';
 import { Link } from 'wouter';
+import { videoConfig } from '@/config/video-config';
 
 const Home = () => {
   return (
@@ -18,7 +19,11 @@ const Home = () => {
     >
       <Hero />
       <FeaturedProducts />
-      <VideoShowcase />
+      <VideoShowcase 
+        videoSrc={videoConfig.showcaseVideo.src}
+        title={videoConfig.showcaseVideo.title}
+        description={videoConfig.showcaseVideo.description}
+      />
       <AboutPreview />
       
       {/* Testimonials Section */}
