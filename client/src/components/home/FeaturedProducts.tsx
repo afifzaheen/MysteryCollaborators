@@ -81,22 +81,47 @@ const FeaturedProducts = () => {
         >
           {products.map((product) => (
             <motion.div key={product.id} variants={itemVariants}>
-              <GlassCard className="h-full flex flex-col">
-                <div className="p-6 flex-grow">
+              <GlassCard 
+                className="h-full flex flex-col group relative overflow-hidden"
+                whileHover={{ 
+                  boxShadow: "0 0 25px 5px rgba(212, 175, 55, 0.25)",
+                  transition: { duration: 0.3 }
+                }}
+              >
+                {/* Luxury shimmer animation overlay */}
+                <div className="absolute -inset-full h-full w-full flex items-center justify-center opacity-0 group-hover:opacity-30 duration-700 transform-gpu group-hover:translate-x-full group-hover:skew-x-12">
+                  <div className="h-40 w-40 bg-gradient-to-tr from-primary via-primary/20 to-primary blur-xl rounded-full transform scale-150"></div>
+                </div>
+                
+                <div className="p-6 flex-grow relative z-10">
                   <div className="aspect-w-16 aspect-h-9 bg-gradient-to-br from-primary/20 to-transparent rounded-md mb-6 flex items-center justify-center">
                     {/* Product Image */}
-                    <img 
+                    <motion.img 
                       src={product.image} 
                       alt={product.name}
-                      className="w-32 h-32 object-contain transition-transform duration-300 hover:scale-110" 
+                      className="w-32 h-32 object-contain" 
+                      whileHover={{ 
+                        scale: 1.1,
+                        filter: "drop-shadow(0px 0px 8px rgba(212, 175, 55, 0.5))",
+                        transition: { 
+                          duration: 0.4,
+                          yoyo: Infinity,
+                          ease: "easeInOut"
+                        }
+                      }}
                     />
                   </div>
-                  <h3 className="text-xl font-display font-semibold mb-2 text-foreground">{product.name}</h3>
+                  <h3 className="text-xl font-display font-semibold mb-2 text-foreground group-hover:text-primary transition-colors duration-300">{product.name}</h3>
                   <p className="text-muted-foreground text-sm mb-4">{product.description}</p>
                   <p className="text-primary font-semibold mb-4">{product.price}</p>
                 </div>
-                <div className="p-6 pt-0 mt-auto">
-                  <Button variant="outline" className="w-full">View Details</Button>
+                <div className="p-6 pt-0 mt-auto relative z-10">
+                  <Button 
+                    variant="outline" 
+                    className="w-full group-hover:border-primary group-hover:text-primary transition-colors duration-300"
+                  >
+                    View Details
+                  </Button>
                 </div>
               </GlassCard>
             </motion.div>
