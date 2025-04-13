@@ -10,18 +10,21 @@ const products = [
     name: "LUXEON Pro Wireless Headphones",
     description: "Immersive sound paired with elegant design. Experience crystal clear audio in premium comfort.",
     price: "$349",
+    image: "/src/assets/images/products/headphones.svg"
   },
   {
     id: 2,
     name: "LUXEON Smart Watch Elite",
     description: "Where technology meets luxury. Monitor your health and stay connected with timeless style.",
     price: "$499",
+    image: "/src/assets/images/products/smartwatch.svg"
   },
   {
     id: 3,
     name: "LUXEON Home Assistant",
     description: "Your elegant AI companion. Control your smart home with sophisticated voice commands.",
     price: "$299",
+    image: "/src/assets/images/products/smarthome.svg"
   }
 ];
 
@@ -80,20 +83,13 @@ const FeaturedProducts = () => {
             <motion.div key={product.id} variants={itemVariants}>
               <GlassCard className="h-full flex flex-col">
                 <div className="p-6 flex-grow">
-                  <div className="aspect-w-16 aspect-h-9 bg-gradient-to-br from-primary/20 to-secondary rounded-md mb-6 flex items-center justify-center">
-                    {/* Product Image Placeholder */}
-                    <svg 
-                      className="w-24 h-24 text-primary" 
-                      viewBox="0 0 24 24" 
-                      fill="none" 
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path 
-                        d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z" 
-                        fill="currentColor"
-                      />
-                      <circle cx="12" cy="12" r="5" fill="currentColor" />
-                    </svg>
+                  <div className="aspect-w-16 aspect-h-9 bg-gradient-to-br from-primary/20 to-transparent rounded-md mb-6 flex items-center justify-center">
+                    {/* Product Image */}
+                    <img 
+                      src={product.image} 
+                      alt={product.name}
+                      className="w-32 h-32 object-contain transition-transform duration-300 hover:scale-110" 
+                    />
                   </div>
                   <h3 className="text-xl font-display font-semibold mb-2 text-foreground">{product.name}</h3>
                   <p className="text-muted-foreground text-sm mb-4">{product.description}</p>
