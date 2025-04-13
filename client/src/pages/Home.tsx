@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import Hero from '@/components/home/Hero';
 import FeaturedProducts from '@/components/home/FeaturedProducts';
+import VideoShowcase from '@/components/home/VideoShowcase';
 import AboutPreview from '@/components/home/AboutPreview';
 import { Container } from '@/components/ui/container';
 import { GlassCard } from '@/components/ui/glass-card';
@@ -17,6 +18,7 @@ const Home = () => {
     >
       <Hero />
       <FeaturedProducts />
+      <VideoShowcase />
       <AboutPreview />
       
       {/* Testimonials Section */}
