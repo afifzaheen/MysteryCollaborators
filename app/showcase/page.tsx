@@ -14,9 +14,6 @@ export default function Showcase() {
 
   const sortedProducts = [...filteredProducts].sort((a, b) => {
     if (sortBy === "price-asc") return a.priceValue - b.priceValue
-    \
-    if (sortBy === "price-  => {
-    if (sortBy === "price-asc") return a.priceValue - b.priceValue
     if (sortBy === "price-desc") return b.priceValue - a.priceValue
     return 0 // featured - maintain original order
   })
